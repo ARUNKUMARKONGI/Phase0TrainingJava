@@ -25,6 +25,7 @@ class DataTypes {
 
                 b++;
                 System.out.print((int)b); //ascii value of 1 50
+                System.out.println("arun");
         }
     }
 
