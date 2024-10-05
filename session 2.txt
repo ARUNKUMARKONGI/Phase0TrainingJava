@@ -1,0 +1,215 @@
+power of 2
+-----------------
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+
+        if (n == 1) {
+            printf("%d is a power of 2.\n", original_n);
+        } else {
+            printf("%d is not a power of 2.\n", original_n);
+        }
+    }
+
+    return 0;
+}
+
+better approach
+------------------
+number = 16
+if number > 0 and (number & (number - 1)) == 0:
+    print("number power of 2")
+else:
+    print("not power of 2")
+
+
+2. Set Bits
+-----------
+
+while num > 0:
+	if((num&1)==1):
+           count ++    #n&1 helps u to find the least significant bit
+        num >>= 1  
+-----------------------
+better approach
+-----------------------
+def count_set_bits(n):
+    count = 0
+    while n>0:
+        n &= (n - 1) 
+        count += 1
+    return count //take example 14
+
+
+3.count sum of set bit counts from 1 to n
+--------------------------------------------
+public class CountSetBits {
+    public int totalOnes(int n) {
+        int totalCount = 0; // Initialize total count of 1's
+
+        for (int i = 1; i <= n; i++) {
+            int num = i;
+            while (num > 0) {
+                totalCount += (num & 1); // Check if the least significant bit is 1
+                num >>= 1; // Right shift to check the next bit
+            }
+        }
+
+        return totalCount; // Return the total count of 1's
+    }
+
+    public static void main(String[] args) {
+        CountSetBits counter = new CountSetBits();
+        int n = 8; // Example input
+        int total = counter.totalOnes(n);
+        System.out.println("Total number of 1's from 1 to " + n + " is: " + total);
+    }
+}
+
+
+
+4. count set bits from 1 to n and store in array
+---------------------------------
+###### 
+Example with n = 5
+Initialization:
+
+dp = [0, 0, 0, 0, 0, 0]
+offset = 1
+Iteration:
+
+i = 1:
+
+offset = 1 (boundary for 1-bit numbers)
+dp[1] = 1 + dp[0] = 1
+dp = [0, 1, 0, 0, 0, 0]
+i = 2:
+
+offset * 2 == 2 (boundary for 2-bit numbers)
+offset = 2
+dp[2] = 1 + dp[0] = 1
+dp = [0, 1, 1, 0, 0, 0]
+i = 3:
+
+dp[3] = 1 + dp[1] = 2
+dp = [0, 1, 1, 2, 0, 0]
+i = 4:
+
+offset * 2 == 4 (boundary for 3-bit numbers)
+offset = 4
+dp[4] = 1 + dp[0] = 1
+dp = [0, 1, 1, 2, 1, 0]
+i = 5:
+
+dp[5] = 1 + dp[1] = 2
+dp = [0, 1, 1, 2, 1, 2]
+Final Output:
+
+The array dp is [0, 1, 1, 2, 1, 2], which represents the number of 1s in the binary representation of each number from 0 to 5.
+
+   dp = [0] * (n + 1)#including zerp 
+        offset = 1
+
+        for i in range(1, n + 1):
+            if offset * 2 == i:
+                offset = i
+            dp[i] = 1 + dp[i - offset]
+        return dp
+
+
+# public class CountSetBits {
+#     public int[] countBits(int n) {
+#         int[] dp = new int[n + 1]; // Create an array of size n + 1
+#         int offset = 1; // Initialize the offset
+
+#         for (int i = 1; i <= n; i++) {
+#             if (offset * 2 == i) {
+#                 offset = i; // Update the offset when we reach a power of 2
+#             }
+#             dp[i] = 1 + dp[i - offset]; // Calculate set bits based on the previous value
+#         }
+
+#         return dp;
+#     }
+
+#     public static void main(String[] args) {
+#         CountSetBits counter = new CountSetBits();
+#         int n = 8; // Example input
+#         int[] result = counter.countBits(n);
+
+#         // Print the result
+#         for (int i = 0; i <= n; i++) {
+#             System.out.println("Number of set bits in " + i + " is: " + result[i]);
+#         }
+#     }
+# }
+
+
+
+5: Reverse bits
+-----------------------
+#Reverse the bits i.e 5 i binary is 101 after reversing its still 101 so ans is 5
+n=int(input())
+b=bin(n)[2:]
+r=b[::-1]
+print(int(r,2))
+
+
+# import java.util.Scanner;
+
+# public class ReverseBits {
+#     public static void main(String[] args) {
+#         Scanner scanner = new Scanner(System.in);
+        
+#         // Read an integer from the user
+#         int n = scanner.nextInt();
+        
+#         // Convert integer to binary string
+#         String binaryString = Integer.toBinaryString(n);
+        
+#         // Reverse the binary string
+#         String reversedBinaryString = new StringBuilder(binaryString).reverse().toString();
+        
+#         // Convert the reversed binary string back to an integer
+#         int reversedInt = Integer.parseInt(reversedBinaryString, 2);
+        
+#         // Print the result
+#         System.out.println(reversedInt);
+#     }
+# }
+
+
+def reverse_bits(n):
+    result = 0
+    num_bits = n.bit_length()  # Determine the number of bits in n
+//int numBits = Integer.SIZE - Integer.numberOfLeadingZeros(n); in java
+    for _ in range(num_bits):
+        result = (result << 1) | (n & 1)
+        n = n >> 1
+    return result
+
+n=int(input())
+rev_n=reverse_bits(n)
+print(rev_n)
+
+
+bit masking
+-----------------
+public class bitmask1 {
+    public static void main(String[] args) {
+    
+    int n=10;
+    int mask= 1<<2; //mask for 3rd bit(0,1,2)
+    n=n|mask;       //n=n&mask will unset the bit
+    System.out.println(n);
+}
+}
+//1010 in binary, 3rd bit is 0, after setting it,
+//it becomes 1110 so output is 14

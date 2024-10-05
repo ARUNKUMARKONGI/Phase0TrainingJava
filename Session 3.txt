@@ -1,0 +1,783 @@
+Pattern Problems
+---------------------
+
+5 5 5 5 5 
+5 5 5 5 
+5 5 5 
+5 5 
+5 
+
+public class reverse5 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=5;
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(n+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+
+better approach
+--------------------
+public class Main {
+    public static void main(String[] args) {
+        int num = 5;
+        for (int i = num; i >= 1; i--) {
+            System.out.println((num + " ").repeat(i).trim());
+        }
+    }
+}
+
+pattern problem 2
+--------------------
+g
+g r
+g r i
+g r i e
+g r i e t
+-------------------
+basic approach
+-------------------
+public class Main {
+    public static void main(String[] args) {
+        String word = "griet";
+
+        for (int i = 0; i < word.length(); i++) { 
+            for (int j = 0; j <= i; j++) {      
+                System.out.print(word.charAt(j) + " "); 
+            }
+            System.out.println(); // Move to the next line after inner loop
+        }
+    }
+}
+
+2nd approach: using string 
+-------------------------------
+public class Main {
+    public static void main(String[] args) {
+        String word = "griet";
+        String x = "";
+
+        for (char i : word.toCharArray()) {
+            x += i; // Append character to the string
+            System.out.println(x.replace("", " ").trim()); // Print with spaces
+        }
+    }
+}
+
+String is less efficient compared to stringbuilder class in java.(string class is immutable, creates new object)
+When you perform operations that seem to modify a string (like concatenation), a new String object is created, and the original string remains unchanged. stringbuilder is mutable.
+
+Best approach using stringbuilder class
+--------------------------
+public class Main {
+    public static void main(String[] args) {
+        String word = "griet"; //StringBuilder word = new StringBuilder(scanner.nextLine());
+        StringBuilder x = new StringBuilder();
+
+        for (char i : word.toCharArray()) {
+            x.append(i); 
+            System.out.println(x.toString().replace("", " ").trim()); //trim removes starting space from each string.
+        }
+    }
+}
+
+
+Hour Glass Pattern
+------------------------
+1 2 3 4 5 
+ 2 3 4 5 
+  3 4 5 
+   4 5 
+    5 
+   4 5 
+  3 4 5 
+ 2 3 4 5 
+1 2 3 4 5 
+--------------------------
+import java.io.*;
+public class Solution
+{
+	// Function definition
+	static void pattern(int rows_no)
+	{
+		int i, j, k;
+	
+		for (i = 1; i <= rows_no; i++) {
+
+			for (k = 1; k < i; k++)
+				System.out.print(" ");
+		
+			for (j = i; j <= rows_no; j++)
+				System.out.print(j + " ");
+	
+			System.out.println();
+		}
+
+		for (i = rows_no - 1; i >= 1; i--)
+		{
+			for (k = 1; k < i; k++)
+				System.out.print(" ");
+	
+			for (j = i; j <= rows_no; j++)
+				System.out.print(j + " ");
+	
+			System.out.println();
+		}
+	}
+	
+	public static void main (String[] args)
+	{
+		// taking rows value from the user
+		int rows_no = 5;
+		pattern(rows_no);
+	
+	}
+}
+
+
+
+pattern problem 2
+-------------------------
+Enter the number of rows: 6
+     1
+    121
+   12321
+  1234321
+ 123454321
+12345654321
+
+
+import java.util.Scanner;
+
+public class NumberPattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = i; j < rows; j++) {
+                System.out.print(" ");
+            }
+            // Print ascending numbers
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            // Print descending numbers
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
+            // Move to the next line
+            System.out.println();
+        }
+    }
+}
+
+
+/*Write a java program to create Criss Cross Pattern as shown in the test case below.
+*****
+** **
+* * *
+** **
+*****
+
+
+Constraints: Read the number of Rows from user. If the number is less than 5, print error message as:
+               "Input number can't be less than 5"
+
+For each row or column, stars (*) are printed based on four conditions:
+----------------------------------
+1. First and last Row
+2. First and Last Column
+3. When Rownumber==ColumnNumber
+4. When the rownumber and columnnumber sum is equal to the Number+1 (reverse diagonal)
+
+//Use the Given Class Structure and implement the method pattern. Access the ErrorMessage String from the pattern method.
+/*import java.util.*;
+public class Solution {
+
+    String ErrorMessage = "Input number can't be less than 5";
+
+    public static void main(String[] args) {
+        //Call the pattern method with input number of rows
+    }
+
+    public static void pattern(int number)
+    {
+        //Complete the code
+        //Access ErrorMessage From here
+    }
+}*/
+import java.util.*;
+
+public class Solution {
+
+    String ErrorMessage = "Input number can't be less than 5";
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        in.close();
+        pattern(a);
+    }
+
+   public static void pattern(int number)
+    {
+        Solution s = new Solution();
+        if (number < 5)
+        {
+            System.out.println(s.ErrorMessage);
+        } else {
+            for (int i = 1; i <= number; i++)
+            {
+                for (int j = 1; j <= number; j++) 
+                {
+                    if ((i == 1) || (i == number) || (j == 1) || (j == number) || (i == j) || (i + j == number + 1)) {  //row 2 column 4 i,e 4+2==5+1 ie.  6==6
+                        System.out.print("*");
+                    } else {
+                       System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+
+
+TextWrap string
+---------------------
+/*abcd
+efgh
+ijkl
+mnop
+qrst
+uvwx
+yz*/
+
+public class AlphabetWrapper {
+    public static void main(String[] args) {
+        int wrapSize = 4;
+        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+        for (int i = 0; i < alphabet.length; i += wrapSize) {
+            for (int j = i; j < i + wrapSize && j < alphabet.length; j++) {
+                System.out.print(alphabet[j]);
+            }
+            System.out.println();
+        }
+    }
+}
+
+Using single loop
+-----------------------
+public class textwrap {
+    public static void main(String[] args) {
+        int wrapSize = 4;
+        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+        for (int i = 0; i < alphabet.length; i++) {
+            System.out.print(alphabet[i]);
+            if ((i + 1) % wrapSize == 0) {
+                System.out.println();
+            }
+        }
+        // if (alphabet.length % wrapSize != 0) {
+        //     System.out.println();
+        // }
+    }
+}
+
+In Python
+---------------
+def wrap(string, max_width):
+    op = []
+    for i in range(0, len(string), max_width):
+        op.append(string[i:i + max_width])
+    
+    for line in op:
+        print(line)
+
+Better solution to avoid string index out of bound error 
+---------------------------------------------------------
+import java.util.*;
+
+public class StringWrapper {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String inputString = sc.nextLine();
+        int maxWidth = sc.nextInt();
+
+        // Validate maxWidth
+        if (maxWidth <= 0) {
+            System.out.println("Max width must be positive.");
+        } else {
+            wrap(inputString, maxWidth);
+        }
+    }
+
+    public static void wrap(String string, int maxWidth) {
+        for (int i = 0; i < string.length(); i += maxWidth) {
+            // Print a substring of the specified width
+            System.out.println(string.substring(i, Math.min(i + maxWidth, string.length())));
+        }
+    }
+}
+
+Bit Masking
+-----------------
+Set bit: change bit from 0 to 1 but keep 1 to 1 only
+-----------------
+public class setbit {
+    public static void main(String[] args) {
+    
+    int n=10;
+    int mask= 1<<2; //mask for 3rd bit(0,1,2)
+    n=n|mask;       //n=n&mask will unset the bit
+    System.out.println(n);
+}
+
+ 
+Unset bit:(change bit from 1 to 0 but not 0 to 1)
+------------
+public class unsetbit {
+    public static void main(String[] args) {
+        int n = 14; 
+        int mask = 1 << 2; 
+        n = n & ~mask; 
+        System.out.println(n); 
+    }
+}
+
+toggling bit (change bit from 0 to 1 and 1 to 0)
+--------------
+public class togglebit {
+    public static void main(String[] args) {
+        int n = 14; 
+        int mask = 1 << 2; 
+        n = n ^ mask; 
+        System.out.println(n); 
+    }
+}
+
+Given x number of 1's followed by y number of 0's, your task is to find the decimal representation of the x and y.
+
+Test case example:
+------------------
+case=t1
+input=3 2
+output=Decimal representation: 28
+
+
+basic approach
+-----------------
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int x = scanner.nextInt(); 
+        int y = scanner.nextInt(); 
+
+        // Calculate (2^x) - 1
+        int decimal = (int)(Math.pow(2, x) - 1);  //in python decimal = (2 ** x) - 1
+        
+        // Multiply by 2^y
+        decimal *= Math.pow(2, y);
+
+        System.out.println("Decimal representation: " + decimal);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int x = scanner.nextInt();
+
+        int y = scanner.nextInt();
+
+         int decimal = (1 << x) - 1; 
+         decimal <<= y; 
+
+
+        System.out.println("Decimal representation: " + decimal);
+    }
+}
+
+
+/*
+import java.math.BigInteger;
+import java.util.*;
+
+public class Solution{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        BigInteger x = scanner.nextBigInteger();
+        BigInteger y = scanner.nextBigInteger();
+
+        BigInteger decimal = BigInteger.ONE.shiftLeft(x.intValue()).subtract(BigInteger.ONE).shiftLeft(y.intValue());
+
+        System.out.println("Decimal representation: " + decimal);
+    }
+}*/
+import java.math.BigInteger;
+import java.util.*;
+
+public class Solution{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        BigInteger x = scanner.nextBigInteger();
+        BigInteger y = scanner.nextBigInteger();
+
+        BigInteger decimal = BigInteger.ONE.shiftLeft(x.intValue());
+        BigInteger res=decimal.subtract(BigInteger.ONE);
+        BigInteger res2=res.shiftLeft(y.intValue());
+
+        System.out.println("Decimal representation: " + res2);
+    }
+}
+
+
+Given Xth & Yth bit positions, create a number where Xth & Yth bit are set.
+
+int setxy (int x, int y) {
+  return ((1 << x) | (1 << y));
+}
+
+
+In a given integer - N, check whether the ith bit is set or not.
+
+Print "true" if ith bit is set in the given integer N, "false" otherwise.
+
+Sample Input
+10 1
+Sample Output
+true
+
+'''
+
+n,i=list(map(int,input().split()))
+if(n>>i & 1==1):
+    print('true')
+else:
+    print('false')
+-----------------------------------------------------
+number of bits required to represent integer number
+--------------------------------------------------------
+/* Write a Java Program to find the minimum number of bits required to represent the
+given integer number. with the following exception handling:
+
+public class Solution {
+    public static int count(int num) {
+        if (num == 0) {
+            return 1;
+        }
+
+        int c= 0;
+        while (num!= 0)
+        {
+            c++;
+            num >>= 1;
+        }
+        return c;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = 0;
+        try {
+            if (scanner.hasNextInt())
+            {
+                num = scanner.nextInt();
+                if (num <= 0) 
+                {
+                    throw new IllegalArgumentException("Please enter a positive integer.");
+                }
+                int bits = count(num);
+                  int bits1 = (int)(Math.log(num) / Math.log(2)) + 1;  //this is equal log10(4)/log10(2)==log2(4)=0.602/0.30=2
+                System.out.println("Total number of bits required = " + bits1);
+            } else {
+                throw new IllegalArgumentException("Wrong input. Please enter a valid integer.");
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        } finally {
+            scanner.close();
+        }
+    }
+}
+
+
+
+Largest Power of 3 less than or equal to given number
+------------------------------------------------------
+import java.util.Scanner;
+
+public class HighestPowerOfThree {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt(); // Read an integer input
+
+        int result = highestPowerOf3(number);
+        System.out.println("The largest power of 3 less than " + number + " is: " + result);
+    }
+
+    static int highestPowerOf3(int n) {
+        int res = 1; // Start with 3^0
+        int powerOfThree = 1; // This will hold 3^k
+
+        // Loop until we exceed n
+        while (powerOfThree < n) {
+            res = powerOfThree; 
+            powerOfThree *= 3; 
+        }
+        
+        return res; // Return the largest power of 3 found
+    }
+}
+
+Using BigInteger Class
+--------------------------
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class HighestPowerOfThree {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String input = scanner.nextLine(); // Read input as a string to handle large numbers
+
+        BigInteger number = new BigInteger(input); // Convert the input string to BigInteger
+        BigInteger result = highestPowerOf3(number); // Find the highest power of 3
+        System.out.println("The largest power of 3 less than " + input + " is: " + result);
+    }
+
+    static BigInteger highestPowerOf3(BigInteger n) {
+        BigInteger res = BigInteger.ONE; // Start with 3^0 = 1
+        BigInteger powerOfThree = BigInteger.ONE; // This will hold 3^k
+
+        // Loop to find the highest power of 3 less than n
+        while (powerOfThree.compareTo(n) < 0) {
+            res = powerOfThree; // Update the result
+            powerOfThree = powerOfThree.multiply(BigInteger.valueOf(3)); // Calculate the next power of 3
+        }
+
+        return res; // Return the largest power of 3 found
+    }
+}
+
+
+ Write a Java Program to check if a given number is beautiful number or not!!
+You are given a number N. A number is called beautiful if, for every digit x in the number, there are x occurrences of it in the number.
+Example: 
+1 is beautiful because 1 has 1 occurrence. 3133 is beautiful because 1 has 1 occurrence and 3 has 3 occurrences.
+224 is not beautiful because 4 does not have 4 occurrences. 
+
+Note:Implement all the invalid cases given in the sample test cases using exception handling!!
+
+Test case examples:
+-----------------------
+case=t1
+input=122
+output=122 is a beautiful number
+
+case=t2
+input=12342
+output=12342 is not a beautiful number
+
+case=t3
+input=ARUN777
+output=
+Invalid input. Please enter a valid integer.
+
+case=t4
+Grade reduction = 20
+input=0
+output=Zero is not allowed as input.
+
+case=t5
+input=12032
+output=
+The number cannot contain zero in between the digits.
+
+case=t6
+fail message="hidden test case"
+input=120432
+output=The number cannot contain zero in between the digits.
+
+case=t7
+input=1223433444
+output=1223433444 is a beautiful number
+
+case=t8
+fail message="hidden test case"
+Grade reduction=20%
+input=124067
+output=The number cannot contain zero in between the digits.
+
+
+PROGRAM:
+-----------------------
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+
+        try {
+            int num = Integer.parseInt(str);
+
+           if (num == 0) {
+                throw new IllegalArgumentException("Zero is not allowed as input.");
+            }
+
+            if (str.contains("0")) {
+                throw new IllegalArgumentException("The number cannot contain zero in between the digits.");
+            }
+
+            if (check_beautiful(num)) {
+                System.out.println(num + " is a beautiful number.");
+            } else {
+                System.out.println(num + " is not a beautiful number.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid integer.");
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static boolean check_beautiful(int num) {
+        String str = String.valueOf(num);
+        int[] count = new int[10]; 
+
+        for (int i = 0; i < str.length(); i++) {  //whenever working with strings start index with 0
+            int digit = str.charAt(i) - '0';
+            count[digit]++;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+            int digit = str.charAt(i) - '0';
+
+            if (count[digit] != digit)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+}
+using hashmap
+-------------------
+HashMap<Character, Integer> digitCount = new HashMap<>();
+            for (char digit : input.toCharArray()) {
+                digitCount.put(digit, digitCount.getOrDefault(digit, 0) + 1);
+            }
+
+            // Check if the number is beautiful
+            boolean isBeautiful = true;
+            for (char digit : digitCount.keySet()) {
+                int count = digitCount.get(digit);
+                if (count != Character.getNumericValue(digit)) {
+                    isBeautiful = false;
+                    break;
+                }
+            }
+
+            // Output the result
+            if (isBeautiful) {
+                System.out.println(input + " is a beautiful number.");
+            } else {
+                System.out.println(input + " is not a beautiful number.");
+            }
+
+
+
+find the sum between largest and second largest element in the array
+-------------------------------------
+ int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
+        int maxIndex = -1;
+        int secondMaxIndex = -1;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > max) {
+                secondMax = max;
+                secondMaxIndex = maxIndex;
+                max = nums[i];
+                maxIndex = i;
+            } else if (nums[i] > secondMax && nums[i] < max) {
+                secondMax = nums[i];
+                secondMaxIndex = i;
+            }
+        }
+
+        // Swap indices if second max comes before max
+        if (secondMaxIndex > maxIndex) {
+            int temp = maxIndex;
+            maxIndex = secondMaxIndex;
+            secondMaxIndex = temp;
+        }
+
+        int sum = 0;
+        for (int i = secondMaxIndex + 1; i < maxIndex; i++) {
+            sum += nums[i];
+        }
+
+        return sum;
+    }
+} 
+
+--------------------
+find largest subset array size which is greater than or equal to zero but non negative
+
+Input: arr[] = {5, -7, 0, -5, -3, -1}
+
+Non-negative numbers: 5, 0 → Sum = 5.
+Sorted negative numbers: -1, -3, -5, -7.
+Add -1 → Sum = 4.
+Add -3 → Sum = 1.
+Add -5 → Sum = -4 (which violates the condition).
+So, the largest subset we can pick is {5, 0, -1, -3} with a sum of 1 and size 4.
+Output: 4
+
+Example 2:
+Input: arr[] = {1, -4, -2, -3}
+
+Non-negative number: 1 → Sum = 1.
+Sorted negative numbers: -2, -3, -4.
+Adding any negative number would make the sum negative.
+So, the largest subset is {1} with a sum of 1 and size 1.
+
+---------------------
+n = int(input())
+arr = list(map(int, input().split()))
+
+pos_subset = [x for x in arr if x >= 0]
+neg_subset = sorted([x for x in arr if x < 0], reverse=True)
+
+sum_subset = sum(pos_subset)
+subset_size = len(pos_subset)
+
+for num in neg_subset:
+    if sum_subset + num >= 0:
+        sum_subset += num
+        subset_size += 1
+    else:
+        break
+
+print(subset_size) 
