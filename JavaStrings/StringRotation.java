@@ -1,3 +1,13 @@
+/*input=
+    string=abcde
+    goal=cdeab
+output=true
+
+input=s: "rotation"
+goal: "tationro"
+output=true
+*/
+
 package StringBasics;
 import java.util.Scanner;
 public class StringRotation {
