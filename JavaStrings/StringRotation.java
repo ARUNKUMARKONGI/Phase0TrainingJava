@@ -28,6 +28,9 @@ public class StringRotation {
         String res = s + s;
         // Check if goal is a substring of res
         return res.contains(goal);
+
+    //      String myStr = "arunarun";
+    // System.out.println(myStr.contains("unar"));
     }
 }
 
