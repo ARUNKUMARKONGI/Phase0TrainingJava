@@ -1,5 +1,3 @@
-package StringBasics.Problems;
-
 public class First20Armstrongs {
         public static void main(String[] args) {
             System.out.println("First 20 Armstrong numbers:");
@@ -27,6 +25,8 @@ public class First20Armstrongs {
             }
 
             return sum == num;
+
+            // return sum == Long.parseLong(numStr);
         }
     }
 

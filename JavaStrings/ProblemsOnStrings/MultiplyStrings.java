@@ -1,5 +1,3 @@
-package StringBasics.Problems;
-
 import java.util.Scanner;
 
 public class MultiplyStrings {

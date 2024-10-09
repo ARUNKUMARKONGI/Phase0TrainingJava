@@ -1,5 +1,3 @@
-package StringBasics;
-
 public class ReverseUsingplus {
     public static void main(String[] args) {
         String str1 = "GRIET";

@@ -1,5 +1,3 @@
-package StringBasics;
-
 public class EnhancedSwitch {
     public static void main(String[] args) {
         int itemCode=3;

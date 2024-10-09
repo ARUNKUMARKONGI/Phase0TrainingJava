@@ -1,4 +1,3 @@
-package StringBasics.Problems;
 import java.util.Scanner;
 public class EncryptString {
         public static void main(String[] args) {
@@ -16,10 +15,10 @@ public class EncryptString {
                 for(int i=0;i<name.length();i++)
                 {
                     char c = name.charAt(i);
-                    int a = Integer.parseInt(""+c);
-                    int b= Character.getNumericValue(c);
                     if(Character.isAlphabetic(c))
                         ch += (char)(name.charAt(i)+1);
+                        //typecasting is reqd bcz when we do + - on characters
+                        //its done in ascii value, so need to convert it back to characters.
                        // ch1.append((char) (name.charAt(i) + 1));
                     else
                         ch+=c;

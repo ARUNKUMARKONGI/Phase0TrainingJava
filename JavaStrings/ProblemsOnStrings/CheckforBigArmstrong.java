@@ -1,6 +1,5 @@
-package StringBasics.Problems;
 import java.util.Scanner;
-import java.math.BigInteger;
+// import java.math.BigInteger;
 public class CheckforBigArmstrong {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

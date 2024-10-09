@@ -1,11 +1,11 @@
-package StringBasics;
+
 
 public class ToStringExample {
     public static void main(String[] args) {
         Student st = new Student("Hello", 42);
 
-        String result = String.valueOf(st);
-       // String result=st.toString();
+        // String result = String.valueOf(st);
+       String result=st.toString();
         System.out.println("Student Data: " + result);
     }
 

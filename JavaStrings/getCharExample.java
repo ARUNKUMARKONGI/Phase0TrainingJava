@@ -1,5 +1,3 @@
-package StringBasics;
-
 import java.util.Scanner;
 
 public class getCharExample {

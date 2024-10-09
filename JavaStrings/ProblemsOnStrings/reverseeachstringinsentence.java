@@ -1,8 +1,6 @@
-package StringBasics;
-
 import java.util.Scanner;
 
-public class StringsExample {
+public class reverseeachstringinsentence {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();

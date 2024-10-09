@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+// Recursive function to compute the super digit
+int superDigit(int n) {
+    if (n < 10) {
+        return n; // Base case: if n is a single digit
+    }
+    
+    int sum = 0;
+    // Calculate the sum of the digits
+    while (n > 0) {
+        sum += n % 10; // Add the last digit to sum
+        n /= 10;       // Remove the last digit
+    }
+
+    
+    // Recur with the sum of digits
+    return superDigit(sum);
+}
+
+int main() {
+    long long num;
+    scanf("%lld", &num); // Read the input number
+
+    // Call the superDigit function and print the result
+    printf("Super Digit: %d\n", superDigit(num));
+
+    return 0;
+}
+
+
+using recursion throughtout
+---------------------------
+#include <stdio.h>
+
+int sumOfDigits(int n) {
+    if (n == 0) {
+        return 0; // Base case: if n is 0, the sum is 0
+    }
+    return (n % 10) + sumOfDigits(n / 10); // Last digit + sum of remaining digits
+}
+
+int superDigit(int n) {
+    if (n < 10) {
+        return n; // Base case: if n is a single digit
+    }
+
+    int sum = sumOfDigits(n); // Get the sum of the digits using recursion
+    return superDigit(sum);    // Recur with the sum of digits
+}
+
+int main() {
+    long long n;
+
+    printf("Enter a number: ");
+    scanf("%lld", &n); // Read the input number
+
+    // Calculate and print the super digit
+    int result = superDigit(n);
+    printf("Super Digit: %d\n", result);
+
+    return 0;
+}
+
