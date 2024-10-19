@@ -17,15 +17,11 @@ public class ZeroMatrix {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-
-        // Print the original matrix
         System.out.println("Original Matrix:");
         printMatrix(matrix, n);
 
-        // Set zero rows and columns
         setZeroMatrix(matrix, n);
 
-        // Print the modified matrix
         System.out.println("Modified Matrix:");
         printMatrix(matrix, n);
         
@@ -45,7 +41,6 @@ public class ZeroMatrix {
                 }
             }
         }
-
         // Step 2: Set the rows to zero
         for (int i = 0; i < n; i++) {
             if (row[i]) {
@@ -54,7 +49,6 @@ public class ZeroMatrix {
                 }
             }
         }
-
         // Step 3: Set the columns to zero
         for (int j = 0; j < n; j++) {
             if (col[j]) {
@@ -65,7 +59,6 @@ public class ZeroMatrix {
         }
     }
 
-    // Utility function to print a matrix
     private static void printMatrix(int[][] matrix, int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -75,18 +68,3 @@ public class ZeroMatrix {
         }
     }
 }
-
-
------------
-or just use
-
-        // Step 2: Set entire row and column to zero.
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (row[i] || col[j]) {
-                    matrix[i][j] = 0;
-                }
-            }
-        }
-
-but this takes more comparions. and condition checks

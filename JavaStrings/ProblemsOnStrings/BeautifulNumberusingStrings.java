@@ -1,6 +1,6 @@
 
 
- Write a Java Program to check if a given number is beautiful number or not!!
+/*Write a Java Program to check if a given number is beautiful number or not!!
 You are given a number N. A number is called beautiful if, for every digit x in the number, there are x occurrences of it in the number.
 Example: 
 1 is beautiful because 1 has 1 occurrence. 3133 is beautiful because 1 has 1 occurrence and 3 has 3 occurrences.
@@ -47,10 +47,9 @@ fail message="hidden test case"
 Grade reduction=20%
 input=124067
 output=The number cannot contain zero in between the digits.
+*/
 
 
-PROGRAM:
------------------------
 import java.util.Scanner;
 
 public class Solution {

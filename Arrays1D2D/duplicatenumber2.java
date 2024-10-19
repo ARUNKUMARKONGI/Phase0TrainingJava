@@ -20,9 +20,6 @@ public class duplicatenumber2 {
        
     /* public static int findDuplicate(int[] nums) 
     {
-    HashSet<Integer> seen = new HashSet<>(); 
-     //hashset takes O(1) 
-    //for lookup whereas arraylist uses O(n)
     // ArrayList<Integer> seen = new ArrayList<>();
     for (int num : nums) {
         // Check if the number has been seen before
