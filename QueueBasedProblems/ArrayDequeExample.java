@@ -14,6 +14,10 @@ public class ArrayDequeExample {
         queue.offer(40);
         queue.offer(50);
         
+     /* we can use add method also to insert only difference is add throws Illegal state exception
+    if we there is no space.
+    whereas offer returns false. */
+
         System.out.println("Queue after enqueueing elements: " + queue);
         
 

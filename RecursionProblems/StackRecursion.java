@@ -10,7 +10,7 @@ public class StackRecursion {
         
         printStack(stack);
         
-        // stack.push(top); // Push back the element to maintain the original stack
+        stack.push(top); // Push back the element to maintain the original stack
     }
 
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class StackRecursion {
         
         System.out.println("Stack elements are:");
         printStack(stack);
-        // System.out.println("stack:");
-        // printStack(stack);
+        System.out.println("stack:");
+        printStack(stack);
     }
 }

@@ -4,9 +4,9 @@ public class DecimaltoBinary {
     
     public static String decimalToBinary(int num) {
         if (num == 0) {
-            return ""; // Base case: if the number is 0
+            return ""; 
         }
-        return decimalToBinary(num / 2) + (num % 2); // Recursive call
+        return decimalToBinary(num / 2) + (num % 2); 
     }
 
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class DecimaltoBinary {
 
         String binary = decimalToBinary(num);
         if (binary.isEmpty()) {
-            binary = "0"; // Handle the case when input is 0
+            binary = "0"; 
         }
         
         System.out.println("Binary representation: " + binary);

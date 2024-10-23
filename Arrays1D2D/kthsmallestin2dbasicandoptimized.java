@@ -58,9 +58,8 @@ The 7th smallest element is: 89884
 // Start writing your code from here
 
 import java.util.Arrays;
-import java.util.PriorityQueue;
 import java.util.Scanner;
-public class kthsmallest {
+public class kthsmallestin2dbasicandoptimized {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

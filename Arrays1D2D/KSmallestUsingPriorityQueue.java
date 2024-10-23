@@ -40,6 +40,7 @@ public class KthSmallest {
                 minHeap.offer(matrix[i][j]);
             }
         }
+        System.out.println(minHeap);  //doesn't guaranteed the order as sorted 
 
         // Extract the smallest element k times
         int kthSmallest = -1;
