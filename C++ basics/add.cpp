@@ -13,6 +13,8 @@ int main() {
     } else {
         cout << "Result: " << (int32_t)result << endl;
     }
-
+ 
     return 0;
 }
+
+//ctrl+f8 for run

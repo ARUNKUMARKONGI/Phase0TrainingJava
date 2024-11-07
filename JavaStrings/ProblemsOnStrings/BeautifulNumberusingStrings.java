@@ -101,7 +101,7 @@ public class Solution {
     }
 
 }
-using hashmap
+/* using hashmap
 -------------------
 HashMap<Character, Integer> digitCount = new HashMap<>();
             for (char digit : input.toCharArray()) {
@@ -125,3 +125,4 @@ HashMap<Character, Integer> digitCount = new HashMap<>();
                 System.out.println(input + " is not a beautiful number.");
             }
 
+ */

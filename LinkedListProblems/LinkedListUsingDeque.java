@@ -1,7 +1,7 @@
 package LinkedListProblems;
 import java.util.Deque;
 import java.util.ArrayDeque;
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
 public class LinkedListUsingDeque {
     public static void main(String[] args) {

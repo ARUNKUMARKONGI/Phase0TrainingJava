@@ -17,15 +17,12 @@ public class CheckforBigArmstrong {
         public static boolean isArmstrongNumber(String numStr) {
             int length = numStr.trim().length();
             long sum = 0;
-            //BigInteger sum = BigInteger.ZERO;
             for (int i = 0; i < length; i++) {
                 int digit = Character.getNumericValue(numStr.charAt(i));
                 sum += Math.pow(digit, length);
-               // sum = sum.add(BigInteger.valueOf(digit).pow(length));
             }
             return sum == Long.parseLong(numStr);
-            //BigInteger res = new BigInteger(numStr);
-           // return sum.equals(res);
+          
         }
     }
 

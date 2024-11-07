@@ -1,6 +1,80 @@
 {
-  "version": "0.2.0",
   "configurations": [
+    {
+      "type": "java",
+      "name": "arraylistexample",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.ArrayList.arraylistexample",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "TreeSetCricketer",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.TreeSetCricketer",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "TreeSetBasics",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.TreeSetBasics",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "TreeMapBasics",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.TreeMapBasics",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "HashsetBasics3",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.HashsetBasics3",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "Mpattern",
+      "request": "launch",
+      "mainClass": "PatternProblems.Mpattern",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "duplicateusinghashmap",
+      "request": "launch",
+      "mainClass": "SIProblems.duplicateusinghashmap",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "name": "C/C++: g++.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: g++.exe build active file"
+    },
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -20,5 +94,6 @@
         }
       ]
     }
-  ]
+  ],
+  "version": "2.0.0"
 }
