@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "alternativeseating",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.alternativeseating",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "zpattern",
+      "request": "launch",
+      "mainClass": "PatternProblems.zpattern",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
       "name": "arraylistexample",
       "request": "launch",
       "mainClass": "CollectionsBasicsIntro.ArrayList.arraylistexample",

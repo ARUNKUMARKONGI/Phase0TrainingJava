@@ -51,3 +51,50 @@ public class KthSmallest {
         return kthSmallest;
     }
 }
+/* 
+In a min-heap, the smallest element is always at the root (top) of the heap,
+ and every parent node has a value less than or equal to its children.
+ 
+ For a min-heap each pop operation will remove the smallest element, 
+ effectively sorting the elements in ascending 
+ order over multiple pops.
+ 
+ Example: [7, 10, 3, 1, 5, 8, 4]
+ 
+      1
+    /   \
+   5     3
+  / \   / \
+ 7   10 8  4
+ 
+ step by step creation of min heap
+ ------------------------------------
+     7
+   /
+  10
+  
+  
+    3
+   / \
+  10  7
+  
+    1
+   / \
+  3   7
+ /
+10
+
+    1
+   / \
+  3   7
+ / \ /
+10 5 8
+
+    1
+   / \
+  3   4
+ / \ / \
+10 5 8  7
+
+Insert 4 as the right child of 3. 
+We swap 4 with 7 to maintain the min-heap property, as 4 is smaller than 7.*/
