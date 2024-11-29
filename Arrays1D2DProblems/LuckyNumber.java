@@ -26,15 +26,15 @@ public class LuckyNumber {
             }
             
             // Check if the found minimum is the maximum in its column
-            boolean isMaxInColumn = true;
+            boolean flag = true;
             for (int k = 0; k < m; k++) {
                 if (matrix[k][minRowIndex] > minRowValue) {
-                    isMaxInColumn = false;
+                    flag = false;
                     break;
                 }
             }
             
-            if (isMaxInColumn) {
+            if (flag) {
                 luckyNumber = minRowValue;
                 break; // Since only one lucky number exists, we can stop searching
             }
@@ -45,9 +45,10 @@ public class LuckyNumber {
 }
 
 /* 
- * 1,2,3
- * 4,5,6
- * 15,16,17
- * 
- * 15 is the lucky number
+  01,02,03
+  04,05,06
+  15,16,17
+ 
+ 15 is the lucky number
+
  */
