@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LuckyNumbers",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.LuckyNumbers",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
       "name": "longestprefixsuffix",
       "request": "launch",
       "mainClass": "ProblemsOnStrings.longestprefixsuffix",

@@ -1,21 +1,19 @@
 package Arrays1D2DProblems;
-import java.util.ArrayList;
 
-
-public class LuckyNumbers {
+public class LuckyNumber {
     public static void main(String[] args) {
         int[][] matrix = {
-            {3, 7, 8},
+            {15, 16, 17},
             {9, 11, 13},
             {15, 16, 17}
         };
 
-        ArrayList<Integer> luckyNumbers = new ArrayList<>();
-        
         int m = matrix.length;
         int n = matrix[0].length;
+
+        int luckyNumber = -1; // Default value if no lucky number is found
         
-        // Step 1: Find the minimum in each row
+        // Step 1: Find the minimum in each row and check if it's the maximum in its column
         for (int i = 0; i < m; i++) {
             int minRowIndex = 0;
             int minRowValue = matrix[i][0];
@@ -27,7 +25,7 @@ public class LuckyNumbers {
                 }
             }
             
-            // Step 2: Check if the found minimum is the maximum in its column
+            // Check if the found minimum is the maximum in its column
             boolean isMaxInColumn = true;
             for (int k = 0; k < m; k++) {
                 if (matrix[k][minRowIndex] > minRowValue) {
@@ -37,10 +35,19 @@ public class LuckyNumbers {
             }
             
             if (isMaxInColumn) {
-                luckyNumbers.add(minRowValue);
+                luckyNumber = minRowValue;
+                break; // Since only one lucky number exists, we can stop searching
             }
         }
         
-        System.out.println(luckyNumbers); 
+        System.out.println(luckyNumber); 
     }
 }
+
+/* 
+ * 1,2,3
+ * 4,5,6
+ * 15,16,17
+ * 
+ * 15 is the lucky number
+ */
