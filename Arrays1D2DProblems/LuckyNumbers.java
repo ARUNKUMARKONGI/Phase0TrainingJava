@@ -1,12 +1,19 @@
+package Arrays1D2DProblems;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class LuckyNumbers {
-    public List<Integer> luckyNumbers (int[][] matrix) {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {3, 7, 8},
+            {9, 11, 13},
+            {15, 16, 17}
+        };
+
         ArrayList<Integer> luckyNumbers = new ArrayList<>();
         
-        int m = matrix.length;  
-        int n = matrix[0].length; 
+        int m = matrix.length;
+        int n = matrix[0].length;
         
         // Step 1: Find the minimum in each row
         for (int i = 0; i < m; i++) {
@@ -33,19 +40,7 @@ public class LuckyNumbers {
                 luckyNumbers.add(minRowValue);
             }
         }
-        return luckyNumbers;
-    }
-    
-    public static void main(String[] args) {
-        LuckyNumbers solution = new LuckyNumbers();
         
-        int[][] matrix = {
-            {3, 7, 8},
-            {9, 11, 13},
-            {15, 16, 17}
-        };
-        
-        List<Integer> result = solution.luckyNumbers(matrix);
-        System.out.println(result); 
+        System.out.println(luckyNumbers); 
     }
 }

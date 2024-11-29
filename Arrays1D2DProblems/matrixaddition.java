@@ -2,7 +2,7 @@
 the order of the matrices are equal, i.e. the two matrices have the same number of rows and columns. */
 
 
-package Arrays;
+package Arrays1D2DProblems;
 import java.util.Scanner;
 
 public class matrixaddition {

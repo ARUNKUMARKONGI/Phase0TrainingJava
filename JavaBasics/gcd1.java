@@ -12,6 +12,4 @@ class gcd1{
                 gcd=i;
             }
         } */
-        Syst */em.out.println(gcd);
-    }
-}
+       

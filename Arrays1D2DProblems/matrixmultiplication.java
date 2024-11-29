@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays1D2DProblems;
 
 public class matrixmultiplication {
 

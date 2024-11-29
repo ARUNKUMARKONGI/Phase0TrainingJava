@@ -57,6 +57,7 @@ The 7th smallest element is: 89884
 */
 // Start writing your code from here
 
+package Arrays1D2DProblems;
 import java.util.Arrays;
 import java.util.Scanner;
 public class kthsmallestin2dbasicandoptimized {

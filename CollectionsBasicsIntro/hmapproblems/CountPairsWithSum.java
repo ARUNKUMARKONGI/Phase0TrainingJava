@@ -1,4 +1,4 @@
-package CollectionsBasicsIntro;
+package CollectionsBasicsIntro.hmapproblems;
 
 import java.util.HashMap;
 import java.util.Scanner;

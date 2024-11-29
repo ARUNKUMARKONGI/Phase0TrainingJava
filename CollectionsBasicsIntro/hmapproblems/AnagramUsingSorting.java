@@ -1,6 +1,4 @@
-// Java Code to check if two Strings are anagrams of 
-// each other using sorting
-
+package CollectionsBasicsIntro.hmapproblems;
 import java.util.Arrays;
 
 public class AnagramUsingSorting {

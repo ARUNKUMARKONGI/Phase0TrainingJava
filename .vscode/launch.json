@@ -2,6 +2,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longestprefixsuffix",
+      "request": "launch",
+      "mainClass": "ProblemsOnStrings.longestprefixsuffix",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "SegmentKeySearch",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.SegmentKeySearch",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "CalculatorwithoutBodmas",
+      "request": "launch",
+      "mainClass": "CalculatorwithoutBodmas",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "LeftRotation",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.LeftRotation",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "leftrotationarray",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.leftrotationarray",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "StringRotation",
+      "request": "launch",
+      "mainClass": "ProblemsOnStrings.StringRotation",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "ReverseUsingplus",
+      "request": "launch",
+      "mainClass": "ProblemsOnStrings.ReverseUsingplus",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
       "name": "alternativeseating",
       "request": "launch",
       "mainClass": "Arrays1D2DProblems.alternativeseating",

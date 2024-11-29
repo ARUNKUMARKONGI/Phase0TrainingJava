@@ -1,4 +1,4 @@
-package CollectionsBasicsIntro;
+package CollectionsBasicsIntro.hmapproblems;
 import java.util.*;
 public class DuplicateusingHashset {
         public static void main(String[] args) {

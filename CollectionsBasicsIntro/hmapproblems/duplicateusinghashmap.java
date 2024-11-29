@@ -1,4 +1,4 @@
-package CollectionsBasicsIntro;
+package CollectionsBasicsIntro.hmapproblems;
 import java.util.*;
 public class duplicateusinghashmap {
 

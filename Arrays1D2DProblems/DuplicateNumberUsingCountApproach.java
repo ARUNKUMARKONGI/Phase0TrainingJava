@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays1D2DProblems;
 import java.util.Scanner;
 
 public class DuplicateNumberUsingCountApproach {

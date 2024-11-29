@@ -1,9 +1,9 @@
-package CollectionsBasicsIntro;
+package CollectionsBasicsIntro.hmapproblems;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class example {
+public class duplicateusinghashmap2{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 

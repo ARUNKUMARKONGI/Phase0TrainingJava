@@ -1,3 +1,5 @@
+package Arrays1D2DProblems;
+
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
