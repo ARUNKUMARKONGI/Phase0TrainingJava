@@ -2,6 +2,104 @@
   "configurations": [
     {
       "type": "java",
+      "name": "alternatingones",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.alternatingones",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "alternatingzeroes",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.alternatingzeroes",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "AdjacentZeroes",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.AdjacentZeroes",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "hollowrectangle",
+      "request": "launch",
+      "mainClass": "PatternProblems.hollowrectangle",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "alternativezeroes",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.alternativezeroes",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "FindTwores",
+      "request": "launch",
+      "mainClass": "CollectionsBasicsIntro.hashsetproblems.FindTwores",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "HollowInvertedLeftTriangle",
+      "request": "launch",
+      "mainClass": "PatternProblems.HollowInvertedLeftTriangle",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "firstoccurrenceoptimized",
+      "request": "launch",
+      "mainClass": "BinarySearchBasedProblems.firstoccurrenceoptimized",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "sumwithqueries",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.sumwithqueries",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "QuadrupleXOR",
+      "request": "launch",
+      "mainClass": "LoopsBitManipulationNumberBasedProblems.QuadrupleXOR",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "RotationMatrix",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.RotationMatrix",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "missingnumberusingxor",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.missingnumberusingxor",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "missingnumberfrom0ton",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.missingnumberfrom0ton",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "missingnumber1ton",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.missingnumber1ton",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
       "name": "LuckyNumbers",
       "request": "launch",
       "mainClass": "Arrays1D2DProblems.LuckyNumbers",

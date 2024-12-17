@@ -60,7 +60,7 @@ The 7th smallest element is: 89884
 package Arrays1D2DProblems;
 import java.util.Arrays;
 import java.util.Scanner;
-public class kthsmallestin2dbasicandoptimized {
+public class kthsmallestnaive {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

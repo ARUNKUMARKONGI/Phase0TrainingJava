@@ -3,7 +3,7 @@ package Arrays1D2DProblems;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class KthSmallest {
+public class KthSmallestusingheap {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -99,4 +99,34 @@ In a min-heap, the smallest element is always at the root (top) of the heap,
 10 5 8  7
 
 Insert 4 as the right child of 3. 
-We swap 4 with 7 to maintain the min-heap property, as 4 is smaller than 7.*/
+We swap 4 with 7 to maintain the min-heap property, as 4 is smaller than 7.
+
+Suppose k = 4. 4th smallest elemnt is 5
+
+
+after first poll 1 is removed.
+    3
+   / \
+  5   4
+ / \  /
+7   10 8
+
+after second poll 3 is removed.
+    4
+   / \
+  5   8
+ / \
+7   10
+
+after 3rd poll 4 is removed.
+    5
+   / \
+  7   8
+ /
+10
+
+after 4th poll 5 is removed.
+    7
+   / \
+  10  8
+  */
