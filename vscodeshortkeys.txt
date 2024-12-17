@@ -1,6 +1,8 @@
-multiline comment: alt+shift+alt
+multiline comment: alt+shift+A
 find and replace: ctrl+H
 duplicate line: shift+alt+up/down arrow key
 delete a line: ctrl+shift+K
 settings page: ctrl+,
 to open new window: ctrl+shift+N
+toggle terminal: ctrl+Q and ctrl+J
+toggle primary side bar visibility: ctrl + ~ (default ctrl+B)
