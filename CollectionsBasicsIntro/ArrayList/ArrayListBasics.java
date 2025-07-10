@@ -55,4 +55,11 @@ Using the interface type List allows for flexibility, as it doesn't tie the
         // Case 1: ArrayList
         myList = new CollectionsBasicsIntro.ArrayList<>();
         // Case 2: Switch to a LinkedList
-        myList = new LinkedList<>();*/
+        myList = new LinkedList<>();
+        
+        
+        
+         ArrayList<String> c1= new ArrayList<String>(3);
+          c1.add("a");
+          c1= new LinkedList<String>(); this will lead error
+            */

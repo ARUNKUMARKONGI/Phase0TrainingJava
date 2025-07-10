@@ -1,5 +1,4 @@
 package BinarySearchBasedProblems;
-import java.util.Arrays;
 import java.util.*;
 public class firstoccurrenceoptimized {
  
@@ -31,8 +30,10 @@ public class firstoccurrenceoptimized {
                 result = mid;
                 if(mid==0)  //reqd if array is 2 or 1 and first mid itself is zero. 
                 return 0;
+                
                 if(arr[mid-1]!=x)
                 return mid;
+                
                 else
                 high = mid - 1;            // Update result and keep searching on the low side
 

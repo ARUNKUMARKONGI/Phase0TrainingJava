@@ -19,7 +19,7 @@ int main() {
 
 /*
 
-Naive approach
+better approach.. conditional stmt takes o(1) whereas strchr takes o(m) where m is vowelarray length
  #include <stdio.h>
 #include <string.h>
 
@@ -36,6 +36,6 @@ int main() {
     }
     
     printf("Number of vowels: %d\n", count);
-    return 0;
+    return 0; 
 }
  */

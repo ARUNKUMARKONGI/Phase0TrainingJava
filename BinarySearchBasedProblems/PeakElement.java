@@ -34,9 +34,8 @@ public class PeakElement {
             } else {
                 low = mid + 1;  // Continue searching in the right half
             }
-        }
-        
-        return low;  // 'low' will be the index of the peak element
+        } 
+        return low;             // 'low' will be the index of the peak element
     }
 }
 /* 

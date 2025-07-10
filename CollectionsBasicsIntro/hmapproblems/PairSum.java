@@ -30,7 +30,11 @@ public class PairSum {
     }
 }
 
-// O(nlogn)
+// O(nlogn) for sorting
 //2 pointer: O(n/2)
 // in general O(nlogn)
 //space complexity: O(1)
+
+//using hashmap
+//time complexity: O(1)
+//space complexity: O(n) as extra space is utilized.

@@ -1,5 +1,5 @@
 package Arrays1D2DProblems;
-import java.util.*;
+import java.util.Scanner;
 public class missingnumber1ton {
   
     public static void main(String[] args) {
@@ -13,23 +13,18 @@ public class missingnumber1ton {
         for (int i = 0; i < n - 1; i++) {
             nums[i] = sc.nextInt();
         }
-
-
         int totalSum = n * (n + 1) / 2;  
         //bracket (n+1) evaluated then multiplied with n then /2
 
- 
         int arraySum = 0;
         for (int num : nums) {
             arraySum += num;
         }
-
         int missingNumber = totalSum - arraySum;
 
         System.out.println("Missing number: " + missingNumber);
     }
 }
-
 
 /* 
  * N=4

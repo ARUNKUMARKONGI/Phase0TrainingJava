@@ -2,6 +2,132 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HollowInvertedLeftTriangle",
+      "request": "launch",
+      "mainClass": "PatternProblems.HollowInvertedLeftTriangle",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "hollowrectangle",
+      "request": "launch",
+      "mainClass": "PatternProblems.hollowrectangle",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "palindromicpattern",
+      "request": "launch",
+      "mainClass": "PatternProblems.palindromicpattern",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "griet2",
+      "request": "launch",
+      "mainClass": "PatternProblems.griet2",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "griet",
+      "request": "launch",
+      "mainClass": "PatternProblems.griet",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "CalculatorwithoutBodmas",
+      "request": "launch",
+      "mainClass": "CalculatorwithoutBodmas",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "commandlineexample",
+      "request": "launch",
+      "mainClass": "commandlineexample",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "hasnextint",
+      "request": "launch",
+      "mainClass": "hasnextint",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "arraybasics",
+      "request": "launch",
+      "mainClass": "arraybasics",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "DecimalFormat123",
+      "request": "launch",
+      "mainClass": "DecimalFormat123",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "Greatestenglishletter",
+      "request": "launch",
+      "mainClass": "ProblemsOnStrings.Greatestenglishletter",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "DecimalFormat",
+      "request": "launch",
+      "mainClass": "DecimalFormat",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "longestcontigous1s",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.longestcontigous1s",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "PairSum",
+      "request": "launch",
+      "mainClass": "PairSum",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "countwords",
+      "request": "launch",
+      "mainClass": "countwords",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "MatrixSum",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.MatrixSum",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "duplicatenumber2",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.duplicatenumber2",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
+      "name": "griet",
+      "request": "launch",
+      "mainClass": "PatternProblems.griet",
+      "projectName": "Phase0TrainingJava_bdcea32a"
+    },
+    {
+      "type": "java",
       "name": "alternatingones",
       "request": "launch",
       "mainClass": "Arrays1D2DProblems.alternatingones",
@@ -250,8 +376,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Phase0TrainingJava/C++ basics",
-      "program": "d:/Phase0TrainingJava/C++ basics/build/Debug/outDebug",
+      "cwd": "d:/Phase0TrainingJava/LinkedListProblems",
+      "program": "d:/Phase0TrainingJava/LinkedListProblems/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -261,6 +387,13 @@
           "ignoreFailures": true
         }
       ]
+    },
+    {
+      "type": "java",
+      "name": "Launch Java Program",
+      "request": "launch",
+      "mainClass": "commandlineexample",
+      "args": "10 20 30"
     }
   ],
   "version": "2.0.0"

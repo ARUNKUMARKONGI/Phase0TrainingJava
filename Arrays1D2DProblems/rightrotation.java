@@ -19,6 +19,10 @@ public class rightrotation {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[(i + shift) % n] + " ");
         }
+        /* or
+        loop from i=n-d to n and print array elements
+        loop from i=0 to n-d and print array elements */
+
         sc.close();
     }
 }

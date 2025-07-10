@@ -17,3 +17,23 @@ class griet
         }
     }
 }
+
+
+/* 
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[] = "GRIET";
+    int length = strlen(s);
+
+    for (int i = 0; i < length; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf("%c ", s[j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+ */

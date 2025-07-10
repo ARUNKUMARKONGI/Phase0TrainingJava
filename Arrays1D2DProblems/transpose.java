@@ -52,4 +52,19 @@ public class transpose {
         after transpose becomes 2*3 matrix
         {1,4,7}
         {2,5,8}
-         */
+         
+        
+        if square matrix 
+         for (i = 0; i < N; i++) 
+        for (j = 0; j < N; j++) 
+            B[i][j] = A[j][i]; 
+            
+            Or below.
+            
+        for(int i=0; i<m; i++){  
+        for(int j=0; j<n; j++){  
+            int temp = matrix[i][j];  
+            matrix[i][j] = matrix[j][i];  
+            matrix[j][i] = temp;  
+        }  
+    }  */

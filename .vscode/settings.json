@@ -58,6 +58,9 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "*.c": "c",
-    "iostream": "cpp"
-  }
+    "*.cpp": "cpp",
+    "iostream": "cpp",
+    "stdio.h": "c"
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }
