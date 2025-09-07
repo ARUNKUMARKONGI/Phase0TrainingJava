@@ -10,4 +10,4 @@ to use function key witout pressing fn in windows
 press fn+esc and now we can directly run any code by pressing ctrl+function9
 windows+R and type mrt to scan for viruses
 ctrl+ . to check for constructor and setter and getter methods.
-
+ctrl+x and c to close workspace

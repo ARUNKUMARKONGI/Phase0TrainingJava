@@ -13,7 +13,7 @@ public class Arrayageruntime {
         for (int i = 0; i < n; i++) {
             ages[i] = scanner.nextInt();
         }
-        // System.out.println(Arrays.toString(ages));
+        //System.out.println(Arrays.toString(ages));
         
         float avg, sum = 0;
 
