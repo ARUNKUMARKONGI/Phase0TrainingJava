@@ -2,6 +2,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NthFibonacciRecursion",
+      "request": "launch",
+      "mainClass": "NthFibonacciRecursion",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "superdigit",
+      "request": "launch",
+      "mainClass": "superdigit",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "hollowtriangle",
+      "request": "launch",
+      "mainClass": "PatternProblems.hollowtriangle",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "numberpyramid",
+      "request": "launch",
+      "mainClass": "PatternProblems.numberpyramid",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "rhombus",
+      "request": "launch",
+      "mainClass": "PatternProblems.rhombus",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "HollowInvertedLeftTriangle",
       "request": "launch",
       "mainClass": "PatternProblems.HollowInvertedLeftTriangle",

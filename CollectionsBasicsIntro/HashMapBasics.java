@@ -1,4 +1,3 @@
-package CollectionsBasicsIntro;
 import java.util.HashMap;
 
 /* 
@@ -42,11 +41,17 @@ public class HashMapBasics {
             for (int key : map.keySet()) {
                 System.out.println("Key: " + key + ", Value: " + map.get(key));
             }
+
+            for(var i:map.entrySet())
+            {
+                System.out.println("Key: "+i.getKey()+", Value: "+i.getValue());
+            }
 /*
             for(Map.Entry<Integer,String> i: hashMap.entrySet())
             {
                 System.out.println("Key: "+i.getKey()+", Value: "+i.getValue());
             }
+        
 */
             /*for(String val: hashMap.values())
             {

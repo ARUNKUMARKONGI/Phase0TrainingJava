@@ -21,3 +21,17 @@ public class HollowInvertedLeftTriangle {
     }
 }
 
+/* example test case
+ * n=5
+ * * * * * *
+ * *       *
+ * *     *
+ * *   *
+ * * *
+ * *
+ * *
+ * *
+ * *
+ * *
+ * *
+ */

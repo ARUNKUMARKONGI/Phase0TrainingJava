@@ -14,3 +14,9 @@ public class commandlineexample
     }
   }
   
+
+  //to run cmd line args programs in vs code, use the following steps:  
+  //1. right click on the file in the explorer and open integrated terminal.
+  //2. compile using javac filename.java
+  //3. run using java filename arg1 arg2 arg3 (where arg1,
+  //arg2, arg3 are the command line arguments you want to pass)

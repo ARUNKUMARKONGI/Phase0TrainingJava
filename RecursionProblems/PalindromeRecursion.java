@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class PalindromeRecursion {
     static boolean isPalindrome(String s, int start, int end) {
-        if (start >= end)
+        if (start >= end)  //for even length greater than equal is compulsory
             return true;
         if (s.charAt(start) != s.charAt(end))
             return false;

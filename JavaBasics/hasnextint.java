@@ -26,3 +26,22 @@ class hasnextint {
     }
 }
 
+
+
+
+
+
+
+
+
+
+/*
+
+Assume limit as 1000
+a = 800
+b = 300
+→ a > 1000 - b
+→ 800 > 700 → true
+→ Output:
+
+Overflow would happen if we add a + b */

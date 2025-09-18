@@ -32,7 +32,7 @@ public class CustomExceptionUsernameValidator2 {
             }
             System.out.println("Username is valid: " + username);
         } catch (InvalidUsernameException | InvalidCharacterException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error:"+e.getMessage());
         }
     }
 }

@@ -13,6 +13,10 @@ public class nextline {
 
         System.out.println("Integer entered: " + num);
         System.out.println("String entered: " + str);
+
+        //read character from user
+        char c = sc.next().charAt(0);
+        System.out.println("Character entered: " + c);
     }
 }
 

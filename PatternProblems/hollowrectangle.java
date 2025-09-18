@@ -21,3 +21,11 @@ public class hollowrectangle {
         }
     }
 }
+/*example output
+n=5
+m=4
+*****
+*   *   
+*   *
+*****
+*/

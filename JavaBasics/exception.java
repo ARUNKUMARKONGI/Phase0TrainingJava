@@ -12,3 +12,25 @@ public class exception {
     }
 }
 }
+
+/* import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        if (sc.hasNextInt()) {
+            int a = sc.nextInt();
+            if (sc.hasNextInt()) {
+                int b = sc.nextInt();
+                int sum = a + b;
+                System.out.println(sum);
+            } else {
+                System.out.println("invalid input");
+            }
+        } else {
+            System.out.println("invalid input");
+        }
+    }
+}
+ */

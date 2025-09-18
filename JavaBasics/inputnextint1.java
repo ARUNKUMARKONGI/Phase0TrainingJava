@@ -11,7 +11,7 @@ public class inputnextint1 {
             System.out.println("Your entered value: " + x);
         }
         else {
-            System.out.println("Please entered the Integer value. ");
+            System.out.println("Please enter the Integer value. ");
         }
         scan.close();
         System.out.println(Math.sqrt(64));  
