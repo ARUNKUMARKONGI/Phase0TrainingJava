@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DecimaltoBinary",
+      "request": "launch",
+      "mainClass": "DecimaltoBinary",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "StackRecursion",
+      "request": "launch",
+      "mainClass": "StackRecursion",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "Fibanacci_Series_Sum_Nth_Term",
+      "request": "launch",
+      "mainClass": "Fibanacci_Series_Sum_Nth_Term",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "NthFibonacciRecursion",
       "request": "launch",
       "mainClass": "NthFibonacciRecursion",

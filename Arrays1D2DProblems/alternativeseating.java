@@ -36,3 +36,26 @@ public class alternativeseating {
         sc.close();
     }
 }
+
+/*
+import java.io.*;
+import java.util.*;
+ public class Main {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Main. */
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int size = sc.nextInt();
+    int[] arr = new int[size];
+    for(int i = 0 ; i<size; i++)
+    arr[i] = sc.nextInt();
+    int count = 0;
+    for(int i = 0; i<size-1;i++){
+        if(arr[i] == 0 && arr[i+1] == 0) n--;
+    }
+    System.out.println(n<=0 ? "YES" : "NO");
+
+    }
+} 
+*/

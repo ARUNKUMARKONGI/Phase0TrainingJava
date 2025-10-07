@@ -8,12 +8,13 @@ Constraints:
 1 ≤ A[i] ≤ 10^3
 
 
-Input
+Input:
 6
 4 1 7 4 1 4
 Output:
+2
 
-2 */
+*/
 package SIProblems;
 import java.util.*;
 public class gauntlethashmap {
