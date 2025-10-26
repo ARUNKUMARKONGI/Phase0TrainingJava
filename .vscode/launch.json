@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "distinctelementsinwindowofsizek",
+      "request": "launch",
+      "mainClass": "SIProblems.distinctelementsinwindowofsizek",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "smallerelementsleft",
+      "request": "launch",
+      "mainClass": "SIProblems.smallerelementsleft",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "ArrayDequeExample",
       "request": "launch",
       "mainClass": "Queue.ArrayDequeExample",
