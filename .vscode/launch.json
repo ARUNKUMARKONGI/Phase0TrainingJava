@@ -2,6 +2,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayDequeExample",
+      "request": "launch",
+      "mainClass": "Queue.ArrayDequeExample",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "SortStack",
+      "request": "launch",
+      "mainClass": "SortStack",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "recursivefactorialapproach2",
+      "request": "launch",
+      "mainClass": "recursivefactorialapproach2",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "factorialapproach2",
+      "request": "launch",
+      "mainClass": "factorialapproach2",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "DecimaltoBinary",
       "request": "launch",
       "mainClass": "DecimaltoBinary",
