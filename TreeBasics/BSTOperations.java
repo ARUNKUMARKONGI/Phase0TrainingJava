@@ -34,7 +34,7 @@ class Node {
         left = right = null;
     }
 }
-public class B {
+public class BSTOperations {
     public static Node root;
 
     public static Node insert(Node root, int data) {
