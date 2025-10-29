@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BST",
+      "request": "launch",
+      "mainClass": "BST",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "BSTOperations",
+      "request": "launch",
+      "mainClass": "BSTOperations",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "distinctelementsinwindowofsizek",
       "request": "launch",
       "mainClass": "SIProblems.distinctelementsinwindowofsizek",
