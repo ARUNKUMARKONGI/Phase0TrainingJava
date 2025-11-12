@@ -41,7 +41,7 @@ public class Stringbasics {
          String s = sc.nextLine();
         char[] arr = s.toCharArray();
 
-         StringBuilder sb = new StringBuilder("Java");
+  StringBuilder sb = new StringBuilder("Java");
     for (int i = 0; i < sb.length(); i++) {
     char ch4 = sb.charAt(i);
     System.out.print(ch4 + " ");
