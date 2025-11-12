@@ -1,0 +1,37 @@
+package Arrays1D2DProblems;
+
+import java.util.*;
+
+public class segregateposnegnumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        for(int i=0;i<n;i++) a[i]=sc.nextInt();
+        int res[] = new int[n];
+        int idx = 0;
+        for(int i=0;i<n;i++) if(a[i]<0) res[idx++]=a[i];
+        for(int i=0;i<n;i++) if(a[i]>=0) res[idx++]=a[i];
+        for(int x:res) System.out.print(x+" ");
+    }
+}
+
+/* with O(1) space complexity (2 pointer approach)
+ 
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        for(int i=0;i<n;i++) a[i]=sc.nextInt();
+        int j=0;
+        for(int i=0;i<n;i++){
+            if(a[i]<0){
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+                j++;
+            }
+        }
+        for(int x:a) System.out.print(x+" ");
+    }
+}
+
+ */

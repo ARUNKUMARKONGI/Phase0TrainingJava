@@ -16,7 +16,7 @@ public class Stringbasics {
 
         int sum=10;
         sum = sum + Character.getNumericValue(ch); //returns unicode value
-        //sum = sum+ Integer.parseInt(String.valueOf(ch));
+        // sum = sum+ Integer.parseInt(String.valueOf(ch));
         System.out.println(sum);
 
 
@@ -33,12 +33,27 @@ public class Stringbasics {
         String str3= str+str2;
         System.out.println(str3);
 
+        //converting String to char
+        String griet = "S";
+        char ch3 = griet.charAt(0);
+
+        String var="griet college";
+         String s = sc.nextLine();
+        char[] arr = s.toCharArray();
+
+         StringBuilder sb = new StringBuilder("Java");
+    for (int i = 0; i < sb.length(); i++) {
+    char ch4 = sb.charAt(i);
+    System.out.print(ch4 + " ");
+
+
         String rollNo = "123456778990867654345676543456543654346765467654356543456545675";
         char result1 = rollNo.charAt(5);
         int result2 = Integer.parseInt(String.valueOf(rollNo.charAt(5)));
         // int result3=Integer.parseInt(String.valueOf(result1));
         // System.out.println(String.valueOf(Character.getNumericValue(rollNo.charAt(7))));
 
+       
 
     }
 
