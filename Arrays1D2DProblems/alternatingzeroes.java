@@ -29,7 +29,13 @@ public class alternatingzeroes{
     }
 }
 
-/* 
+/* sample test case
+Input:
+5
+0 1 0 1 0
+Output:
+YES
+*/
 
 For even indices, the value should be 0.
 For odd indices, the value should be 1. */
