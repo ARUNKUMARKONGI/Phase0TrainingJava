@@ -1,6 +1,6 @@
 package Arrays1D2DProblems;
 import java.util.*;
-public class sumofsubarray {
+public class sumofallsubarray {
  
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
