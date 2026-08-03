@@ -1,0 +1,8 @@
+Algorithm for bubble sort: Bubblesort(A,N)
+Step 1: repeat step 2 for i=0 to n-1
+Step 2: repeat for j=0 to n-i-1 
+Step 3:	If A[j]>A[j+1]
+Swap A[j] and A[j+1]
+ [End of inner loop]
+[End of outer loop]
+Step 4: Exit

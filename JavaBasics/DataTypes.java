@@ -7,11 +7,11 @@ class DataTypes {
         // char c = sc.next().charAt(0);
         boolean myBool = true;
         // convert double to float
-        float convertedFloat = (float) myDoubleNum;
+        // float convertedFloat = (float) myDoubleNum;
     
         String myText = "Hello";
         int sizeInBytes = Integer.BYTES;
-        System.out.print ln("Size of Integer in bytes: " + sizeInBytes);
+        System.out.println("Size of Integer in bytes: " + sizeInBytes);
 
         int widthInBits = Long.BYTES;
         System.out.println("Width of long in bits: " + widthInBits);
@@ -27,7 +27,7 @@ class DataTypes {
                 System.out.println(Character.getNumericValue(b));  //returns integer value
                 System.out.println(Character.getNumericValue(c));  //for special chars -1
 
-                b++;
+                // b++;
                 System.out.print((int)b); //ascii value of 1 50
                 System.out.println("arun");
 

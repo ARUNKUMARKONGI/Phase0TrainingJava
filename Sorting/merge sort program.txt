@@ -1,0 +1,52 @@
+#include<stdio.h>
+void mergesort(int a[],int,int); 
+void simplemerge(int a[],int,int,int); 
+int main()
+{
+int a[10],i,n; 
+printf("enter n");
+scanf("%d",&n);
+printf("enter"); 
+for(i=0;i<n;i++) 
+scanf("%d",&a[i]);
+printf("the unsorted list is:\n\n"); 
+for(i=0;i<n;i++)
+printf("%5d",a[i]);
+mergesort(a,0,n-1);
+printf("\nThe final sorted list is:\n\n\n"); 
+for(i=0;i<n;i++)
+printf("%5d",a[i]);
+}
+void mergesort(int a[],int low,int high)
+{
+int mid; 
+if(low<high)
+{
+mid=(low+high)/2; 
+mergesort(a,low,mid);
+mergesort(a,mid+1,high); 
+simplemerge(a,low,mid,high);
+}
+}
+void simplemerge(int a[],int low,int mid,int high)
+{
+int b[10],h,i,j,k;
+i=low;
+j=mid+1;
+k=low;
+while(i<=mid&&j<=high)
+{
+if(a[i]<a[j])
+b[k++]=a[i++];
+else 
+b[k++]=a[j++];
+}
+while(i<=mid)
+b[k++]=a[i++];
+while(j<=high) 
+b[k++]=a[j++];
+for(i=low;i<=high;i++)
+a[i]=b[i];
+}
+
+

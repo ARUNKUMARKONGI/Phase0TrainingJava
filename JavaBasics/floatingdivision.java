@@ -14,3 +14,6 @@ public class floatingdivision {
         System.out.println("correct floating division (a / 3.0): " + right);
     }
 }
+/* float res=5/2.0f; //without f error
+        System.out.println(res); without 2.0f gives 2
+        System.out.println(5/2); this also gives 2*/

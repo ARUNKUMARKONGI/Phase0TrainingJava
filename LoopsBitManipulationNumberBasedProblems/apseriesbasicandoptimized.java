@@ -14,5 +14,6 @@ public class apseriesbasicandoptimized {
 }
 /* for(int i=1;i<=n;i++){
             int term = a + (i-1)*d;
+            // a, a + d, a + 2d, a + 3d
             System.out.print(term + " ");
         } */

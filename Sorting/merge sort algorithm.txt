@@ -1,0 +1,32 @@
+Algorithm:Merge(A,LOW,MID,HIGH)
+----------------------------------------------
+Step 1:Initilize i=LOW,j=MID+1,k=0
+Step 2:repeat while (i<=MID) and (j<=HIGH)
+ 	If A[i]<A[j]
+	Set temp[k++]=A[i++] 
+Else
+	Set temp[k++]=A[j++]
+ 	[End of If]
+	[End of for]
+Step 3:Repeat while j<=HIGH
+	Set temp[k++]=A[i++] 
+	[End of loop]
+	Repeat while i<=MID
+	Set temp[k++]=A[i++] 
+	[End of loop]
+Step 4:[copy the contents of temp back to A]
+	Repeat for k=LOW to HIGH
+	Set A[k]=temp[k] 
+	[End of loop]
+Step 5:Exit 
+
+-------------------------------------------------------
+Mergesort(A,LOW,HIGH)
+-------------------------------------------------------
+Step 1: if LOW<HIGH
+	Set MID=(LOW+HIGH)/2
+	Call Mergesort(A,LOW,MID) 
+	Call Mergesort(A,MID+1,HIGH) 
+	Call Merge(A,LOW,MID,HIGH)
+	[End of If]
+Step 2:Exit

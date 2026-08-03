@@ -1,4 +1,4 @@
-package Arrays1D2DProblems;
+package SubarrayPrefixSumSlidingWindow;
 import java.util.*;
 public class sumofallsubarray {
  

@@ -1,0 +1,85 @@
+CATEGORY 1: Basic Substring Extraction
+
+• Extract substring between two indices
+• Extract all substrings of a string
+• Count how many substrings start with a vowel
+• Count substrings ending with a consonant
+• Print the longest word in a sentence using substring logic
+
+CATEGORY 2: Frequency and Searching
+
+• Count occurrences of a substring inside a string
+• Find first and last occurrence of a substring
+• Check if one string is a rotation of another
+→ Uses substring + concatenation trick
+• Check if one string is a subsequence of another
+• Find all indices where a pattern occurs
+
+CATEGORY 3: Two-Pointer / Sliding Window Substring Problems
+
+These are the most frequently asked substring problems:
+
+• Longest substring without repeating characters
+• Longest substring with at most k distinct characters
+• Smallest window that contains another string
+• Count substrings with all unique characters
+• Longest substring of all vowels
+• Longest substring of alternating characters
+• Number of substrings with sum of ASCII values = k
+
+CATEGORY 4: Palindrome-Based Substring Problems
+
+• Longest palindromic substring
+• Count palindromic substrings
+→ Expand-around-center
+• Longest prefix that is also a suffix
+• Find all palindromic substrings
+• Check if a substring is palindrome (multiple queries)
+
+CATEGORY 5: Prefix / Suffix / Border Problems
+
+• Longest prefix matching another string
+• Count matching prefix–suffix lengths
+• Find longest happy prefix
+• Find the smallest period of a string (repeated substrings)
+• Remove smallest prefix to make string valid (parentheses problems)
+
+CATEGORY 6: Pattern Matching & Advanced Searching
+
+• Substring search using:
+→ Brute force
+→ KMP
+→ Z algorithm
+→ Rabin–Karp hashing
+• Find number of occurrences of a pattern in a long string
+• Find longest repeated substring
+• Detect repeated substring pattern
+
+CATEGORY 7: Numeric / Parsing Substring Problems
+
+• Extract numbers embedded in a string
+• Sum all numeric substrings
+• Largest numeric substring
+• Check if substring forms a valid IP
+• Decode string patterns like 3[a2[b]]
+
+CATEGORY 8: Dynamic Programming Substring Problems
+
+• Longest common substring (not subsequence)
+• Edit distance on substrings
+• Shortest substring to convert one string to another
+• Distinct substrings count using DP
+• Count subsequences equal to a given substring
+
+CATEGORY 9: Common Interview Favorites (Extremely Important)
+
+These appear most often in FAANG interviews:
+
+• Longest substring without repeating characters
+• Longest palindromic substring
+• Minimum window substring
+• Longest substring with k distinct characters
+• Count palindromic substrings
+• Repeated substring pattern
+• Find all anagram substrings
+• Longest repeating substring

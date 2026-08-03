@@ -9,8 +9,6 @@ public class sample {
         System.out.println("Hello");
         System.out.println("a = " + a);
         System.out.println("str = " + str);     
-        Sc.close();
 
    }
 }
-   

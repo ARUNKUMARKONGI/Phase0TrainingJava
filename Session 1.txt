@@ -1,0 +1,26 @@
+Start with Java Introduction
+just introduce how to install jdk and set environmental variables
+run simple java program from command line
+discuss data types
+input/output
+especially adding newline char after reading int and next line string
+discuss class, object, attributes and methods (Actions)
+
+The 4 Core Pillars of OOP
+To fully understand OOP, look at how the car example applies its four main principles:
+Encapsulation: The internal wiring of the car engine is hidden under the hood. You only interact with the steering wheel and pedals (the public interface).
+Inheritance: A specific type of car, like an ElectricCar, can inherit all features of the base Car class but add its own unique attributes like BatteryLife.
+Polymorphism: A startEngine() method might work differently for a GasCar (cranking an engine) versus an ElectricCar (silently powering up), even though they share the same command name.
+Abstraction: You can drive the car without needing to understand the complex thermodynamics happening inside the engine block.
+
+
+A Class is a blueprint, and an Object is an instance of that class.
+
+You can implement encapsulation in Java by following two standard steps:
+Declare variables as private: This hides the data from direct external access.
+Provide public getter and setter methods: This allows safe, controlled access to read and update the values.
+its achieved using getter and setter methods in java.
+
+Inheritance
+Savings account inherits all properties of Bank_Account.
+Recurring account inherits all properties of Bank_Account

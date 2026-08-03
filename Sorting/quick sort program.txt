@@ -1,0 +1,46 @@
+#include<stdio.h>
+void quicksort(int[],int,int); 
+int main()
+{
+int n,i,a[10];
+printf("\nHow many elements you want to sort ? "); 
+scanf("%d",&n);
+printf("\nEnter elements for an array:"); 
+for(i=0; i<n; i++)
+scanf("%d",&a[i]);
+quicksort(a,0,n-1);
+printf("\nSorted elements are:");
+for(i=0;i<n;i++)
+printf("%d ",a[i]);
+}
+void quicksort(int a[],int left, int right)
+{
+int pivot,temp,i,j; 
+if(left<right)
+{
+pivot=a[left];
+i=left;
+j=right; 
+while(i<j)
+{
+	while(a[i]<=pivot&&i<=right)
+		i++;
+	while(a[j]>pivot)
+		j--;
+	if(i<j)
+	{
+	temp=a[i];
+	a[i]=a[j];
+	a[j]=temp;
+	}
+}
+temp=a[left]; 
+a[left]=a[j];
+a[j]=temp;
+
+quicksort(a,left,j-1); 
+quicksort(a,j+1,right);
+}
+}
+
+

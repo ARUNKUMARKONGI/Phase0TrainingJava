@@ -1,0 +1,16 @@
+Algorithm for quick sort:
+Quick sort (A, LEFT, RIGHT)
+Step 1:If LEFT < RIGHT go to step 2 to 7 Otherwise goto step 8
+Step 2: Set Pivot=A[LEFT] Set i=LEFT Set j=RIGHT
+Step 3:Repeat step 4 to 6 while i<j
+Step 4:Repeat while A[i]<=pivot and i<=right Set i=i+1
+[End of while]
+Step 5:Repeat while A[j]>pivot Set j=j-1
+[End of while]
+Step 6: if i<j
+Swap A[i] and A[j]
+ [End of while]
+Step 7:Swap A[j] and A[LEFT] 
+Call quicksort(A,LEFT,j-1)
+Call quicksort(A,j+1,RIGHT)
+Step 8:Exit

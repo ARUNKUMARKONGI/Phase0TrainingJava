@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+void insertionsort(int a[],int n);
+void display(int a[],int n);
+void main()
+{
+int a[20];
+int n,t,i,k,j;
+
+printf("\n Enter no of elements:");
+scanf("%d",&n);
+printf("\n Enter %d elements to sort:",n);
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("\n Unsorted List\n");
+display(a,n);
+printf("\n INSERTION SORT\n");
+insertionsort(a,n);
+printf("\n Sorted List\n");
+display(a,n);
+
+}
+void insertionsort(int a[],int n)
+{
+    
+int i,j,temp;
+for(i=1;i<n;i++)
+{
+      temp=a[i];
+    for(j=i-1;j>=0 && temp<a[j];j--)
+    {
+            a[j+1]=a[j];
+    }
+a[j+1]=temp;
+printf("\n PASS - %d :",i);
+display(a,n);
+}
+}
+void display(int a[],int n)
+{
+int k;
+for(k=0;k<n;k++)
+printf("%d\t",a[k]);
+}
+
+
+
