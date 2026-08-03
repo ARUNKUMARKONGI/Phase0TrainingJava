@@ -17,7 +17,7 @@ public class OOPSpolymorphismBanking {
 
         Scanner sc = new Scanner(System.in);
 
-        Bank_Account acc = new Bank_Account();
+        Bank_Account acc = new Bank_Account(); 
 
         acc.deposit(sc.nextInt());
         acc.deposit(sc.nextDouble());

@@ -53,3 +53,6 @@ public class Main {
 }
 
 */
+//sample test cases
+// Input: 5
+// Output: 101
