@@ -1,3 +1,4 @@
+package Arrays1D2DProblems.Arrays1D;
 import java.util.Scanner;
 
 public class smallest_number_optimized_digit {

@@ -71,4 +71,5 @@ public class array2elementssum {
         if (!found)
             System.out.println("No Pair");
     }
+    sc.close();
 }

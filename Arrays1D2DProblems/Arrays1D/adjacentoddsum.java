@@ -1,4 +1,4 @@
-package Arrays1D2DProblems;
+package Arrays1D2DProblems.Arrays1D;
 import java.util.*;
 public class adjacentoddsum {
     public static void main(String[] args) {
