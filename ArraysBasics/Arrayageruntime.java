@@ -6,14 +6,15 @@ public class Arrayageruntime {
         System.out.print("Enter the number of ages: ");
         int n = scanner.nextInt();
    
-        int ages[] = new int[n];
+        int ages[] = new int[n]; //new allocates memory in heap
     
-    
+        Arrays.fill(ages,10); //fills the array with 10
+        //System.out.println(Arrays.toString(ages));
         System.out.println("Enter the ages:");
         for (int i = 0; i < n; i++) {
             ages[i] = scanner.nextInt();
         }
-        //System.out.println(Arrays.toString(ages));
+        
         
         float avg, sum = 0;
 

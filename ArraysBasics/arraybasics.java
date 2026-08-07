@@ -6,6 +6,10 @@ public class arraybasics {
 
         int arr[]=new int[10];
         //declaration of array runtime
+    /*  Heap → values are initialized in heap. A region inside the JVM that is allocated from RAM.
+        Stack → arr holds the reference to the array in the heap. Another region inside the JVM, also allocated from RAM.
+     */
+
 
         System.out.println(myNum.length);
 
@@ -23,6 +27,8 @@ public class arraybasics {
         //task: create one character array, store each character from the 
         //string into character array, and print them using either for loop
         //or using Arrays.toString.
+
+        
 
         char [] a=college.toCharArray();
         System.out.println(Arrays.toString(a));
@@ -84,7 +90,5 @@ public class arraybasics {
         System.out.println("sum is: "+sum);
      
     }
-
-    //2D arrays
 
 }

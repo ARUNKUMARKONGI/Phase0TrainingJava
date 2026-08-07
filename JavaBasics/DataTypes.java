@@ -41,9 +41,10 @@ double wrong = a / b;   // still 3.0, because a/b is int before conversion
 double right = a / 3.0; // 3.333...
 
 long sum=0;
-long sum = sum + Math.pow(3,5) (3^5)
- this will give compiler error bcz pow always returns double
+sum = sum + Math.pow(3,5) (3^5)
+ this will give compiler error bcz pow always returns double.
  
+ but following will work. only when variable is already declared.
  sum += Math.pow(3,5) this will not give error bcz += operator
  automatically does implicit type casting */
         }

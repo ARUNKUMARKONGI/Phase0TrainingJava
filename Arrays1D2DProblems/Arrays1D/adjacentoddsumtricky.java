@@ -12,10 +12,19 @@ public class adjacentoddsumtricky {
             else c_odd++;
         }
         if(Math.abs(c_even - c_odd) <= 1) 
+            // if the difference between the count of even and odd numbers is at most 1, we can rearrange them
         System.out.print("TRUE");
         else System.out.print("FALSE");
     }
 }
 
 /* Can you rearrange an array so that every adjacent pair has an odd sum? 
-If possible print TRUE, else FALSE.” */
+If possible print TRUE, else FALSE.”
+
+test case example:
+Input: 5
+1 2 3 4 5
+Output: TRUE
+Explanation: We can rearrange the array as 1 2 3 4 5 or 3 2 1 4 5 etc.
+ In all these cases, every adjacent pair has an odd sum.
+ */

@@ -8,12 +8,13 @@ toggle terminal: ctrl+Q and ctrl+J
 ctrl+K and S together to open shortcutkey menu
 
 toggle primary side bar visibility: ctrl + ~ (default ctrl+B)
-to use function key witout pressing fn in windows
+to use function key without pressing fn in windows
 ctrl+ . to check for constructor and setter and getter methods.
 ctrl+x and c to close workspace
-ctrl c+r to close tabs to right
+ctrl v+r to close tabs to right
 ctrl + end to go end of code
 ctrl + Home to go beginning of code
+indent Line: ctrl + K
 
 
 press fn+esc and now we can directly run any code by pressing ctrl+function9

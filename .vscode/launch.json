@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "array2elementssum",
+      "request": "launch",
+      "mainClass": "Arrays1D2DProblems.Arrays1D.array2elementssum",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
+      "name": "whilehasnextintexit",
+      "request": "launch",
+      "mainClass": "whilehasnextintexit",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "DataTypes",
       "request": "launch",
       "mainClass": "DataTypes",

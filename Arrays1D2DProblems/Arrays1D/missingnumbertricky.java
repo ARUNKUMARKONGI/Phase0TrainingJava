@@ -34,3 +34,6 @@ public class missingnumbertricky {
             }
             int ans = xr_arr ^ xr_range;
             System.out.println(ans); */
+
+//sample test case
+// input=
