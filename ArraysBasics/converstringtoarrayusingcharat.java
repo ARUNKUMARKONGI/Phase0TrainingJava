@@ -1,4 +1,4 @@
-public class Main {
+public class converstringtoarrayusingcharat {
     public static void main(String[] args) {
         String myStr = "Hello";
         char[] myArray = new char[myStr.length()];

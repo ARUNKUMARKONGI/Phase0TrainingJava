@@ -1,6 +1,7 @@
+package Arrays1D2DProblems;
 import java.util.Scanner;
 
-public class MatrixSum {
+public class rowsumcolsum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         

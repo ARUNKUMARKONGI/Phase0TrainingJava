@@ -1,3 +1,4 @@
+package Arrays1D2DProblems;
 import java.util.*;
 
 class MovieCollisionsBrute {

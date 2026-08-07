@@ -1,4 +1,4 @@
-package Arrays1D2DProblems;
+package Arrays1D2DProblems.Arrays1D;
 
 import java.util.*;
 
@@ -36,6 +36,6 @@ Input:
 Output:
 YES
 */
-
+/* 
 For even indices, the value should be 0.
 For odd indices, the value should be 1. */

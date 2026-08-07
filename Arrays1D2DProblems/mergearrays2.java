@@ -1,3 +1,4 @@
+package Arrays1D2DProblems;
 import java.util.*;
 public class mergearrays2 {
     public static void main(String[] args) {

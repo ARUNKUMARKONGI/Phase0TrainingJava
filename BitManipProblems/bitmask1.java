@@ -1,3 +1,4 @@
+package BitManipProblems;
 public class bitmask1 {
     public static void main(String[] args) {
     
