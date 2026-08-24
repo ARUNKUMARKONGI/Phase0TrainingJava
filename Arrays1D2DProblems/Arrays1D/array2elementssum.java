@@ -3,7 +3,7 @@ the remaining elements.
 
 Mathematically,
 
-a + b = Total Sum - (a + b)
+a + b = TotalSum - (a + b)
 Rearranging,
 2 × (a + b) = Total Sum
 a + b = Total Sum / 2
@@ -75,3 +75,6 @@ public class array2elementssum {
     }
   
 }
+//test case
+// Input: 4 6 2 8
+// Output: 2 8

@@ -11,7 +11,8 @@ toggle primary side bar visibility: ctrl + ~ (default ctrl+B)
 to use function key without pressing fn in windows
 ctrl+ . to check for constructor and setter and getter methods.
 ctrl+x and c to close workspace
-ctrl v+r to close tabs to right
+ctrl n+r to close tabs to right
+ctrl n+l to close tabs to left
 ctrl + end to go end of code
 ctrl + Home to go beginning of code
 indent Line: ctrl + K

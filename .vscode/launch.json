@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "findmissing0ton",
+      "request": "launch",
+      "mainClass": "BitManipProblems.findmissing0ton",
+      "projectName": "Phase0TrainingJava_67c7d06b"
+    },
+    {
+      "type": "java",
       "name": "array2elementssum",
       "request": "launch",
       "mainClass": "Arrays1D2DProblems.Arrays1D.array2elementssum",

@@ -1,5 +1,4 @@
-package BitManip;
-
+package BitManipProblems;
 import java.util.*;
 
 public class findmissing0ton {

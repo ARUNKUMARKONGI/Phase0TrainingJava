@@ -31,7 +31,6 @@ public class missingnumberusingxor {
              xorArray ^= nums[i];
             } */
 
-        // The missing number is the result of xorTotal ^ xorArray
         int missingNumber = xorTotal ^ xorArray;
 
         // Output the missing number
