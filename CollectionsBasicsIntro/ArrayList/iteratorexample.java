@@ -1,8 +1,7 @@
-package CollectionsBasicsIntro.ArrayList;
 import java.util.*;
 public class iteratorexample {
   public static void main(String[] args) {
-    ArrayList<Integer> numbers = new ArrayList<>();
+    HashSet<Integer> numbers = new HashSet<>();
     numbers.add(12);
     numbers.add(8);
     numbers.add(2);
@@ -10,19 +9,21 @@ public class iteratorexample {
     Iterator<Integer> it = numbers.iterator();
     while(it.hasNext())
      {
-      Integer i = it.next();
+      int i = it.next();
       if(i < 10)
-       {
+      {
         it.remove(); 
       }
     }
     System.out.println(numbers); 
-   /*  for (Integer i : numbers) {
+     /* or (Integer i : numbers) {
       if (i < 10) {
           numbers.remove(i); // This will throw ConcurrentModificationException
-      } */
-  }
-  }
+      } 
+  } */
+}
+}
+  
 
 
 /*

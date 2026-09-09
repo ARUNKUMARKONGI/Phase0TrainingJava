@@ -23,5 +23,8 @@ Ctrl+T
 Go to the next section.
 Ctrl+Tab
 
+GO TO NEXT PAGE IN SECTION
+CTRL+FN BUTTON +UP OR DOWN ARROA
+
 Switch to a different notebook on the Navigation bar
 Ctrl+G,then press Tab key to pick a different notebook, then press Enter

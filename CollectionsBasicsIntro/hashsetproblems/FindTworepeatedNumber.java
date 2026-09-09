@@ -1,8 +1,4 @@
-package CollectionsBasicsIntro.hashsetproblems;
 import java.util.*;
-
-import java.util.*;
-
 public class FindTworepeatedNumber {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
